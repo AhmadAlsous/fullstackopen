@@ -1,0 +1,10 @@
+Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+Server-->>Browser: Status Code 302
+Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->>Browser: HTML Document
+Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->>Browser: The CSS File
+Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->>Browser: The Javascript File
+Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->>Browser: [{content: "dd", date: "2023-04-11T11:52:38.280Z"},…]
